@@ -374,18 +374,35 @@
             </section>
         </section>
         <!-- Newsletter -->
-        <form>
-            <h2>Email Newsletter Sign-up</h2>
-            <label for="newsletter-name">Your Name</label>
-            <input type="text" id="newsletter-name" name="name">
-            <label for="newsletter-email">Your Email</label>
-            <input type="email" id="newsletter-email" name="email">
-            <input type="checkbox" id="marketing-preference" name="marketing-preference">
-            <label for="marketing-preference">
-                Please tick this box if you wish to receive marketing information from us.
-                Please see our <a href="#" target="_blank">Privacy Policy</a> for more informaton on how we keep your data safe. </label>
-                <button type="submit">Subscribe</button>
-        </form>
+        <div class="newsletter">
+            <div class="container">
+                <form class="sign-up">
+                    <h2>Email Newsletter Sign-up</h2>
+                    <div class="sign-up-inputs">
+                        <div class="sign-up-input">
+                            <div class="form-group">
+                                <label class="required" for="newsletter-name">Your Name</label>
+                                <input type="text" id="newsletter-name" class="form-control" name="name">
+                            </div>
+                        </div>
+                        <div class="sign-up-input">
+                            <div class="form-group">
+                                <label class="required" for="newsletter-email">Your Email</label>
+                                <input type="email" id="newsletter-email" class="form-control" name="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="marketing-preference">
+                        <input type="checkbox" id="marketing-pref-checkbox" name="checkbox">
+                            Please tick this box if you wish to receive marketing information from us.
+                            Please see our <a href="#" target="_blank">Privacy Policy</a> for more informaton on how we keep your data safe.
+                        </label>
+                    </div>
+                    <button class="btn news-sub-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
         
         <footer>
             <div class="container">
