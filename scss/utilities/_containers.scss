@@ -16,3 +16,16 @@
         width: map-get($container-width, container-w-large);
     }
 }
+
+.clients-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.client-pop-up-hover {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: -200px;
+    right: -200px;
+}

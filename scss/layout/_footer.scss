@@ -213,3 +213,18 @@ footer {
 .footer__gap {
     display: none !important;
 }
+
+.footer__social--facebook:hover {
+    background-color: $facebook;
+}
+
+.footer__social--linkedin:hover {
+    background-color: $linkedin;
+}
+
+.footer__social--twitter:hover {
+    background-color: $twitter;
+}
+.footer__social--instagram:hover {
+    background-color: $instagram;
+}
