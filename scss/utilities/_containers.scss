@@ -18,7 +18,6 @@
 }
 
 .clients-container {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -28,4 +27,27 @@
     bottom: 100%;
     left: -200px;
     right: -200px;
+}
+
+.row,
+.container {
+
+    &::after {
+        content:" ";
+        display: table;
+    }
+
+    &::before {
+        content:" ";
+        display: table;
+    }
+}
+
+.headings-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container {
+    position: relative;
 }

@@ -1,0 +1,15 @@
+.float-left {
+
+    @media (min-width: map-get($breakpoints, breakpoint-narrow)) {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+.float-right {
+
+    @media (min-width: map-get($breakpoints, breakpoint-narrow)) {
+        float: right;
+        margin-right: 20px;
+    }
+}
