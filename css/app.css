@@ -20,7 +20,7 @@
   }
 }
 
-.clients-container {
+.logo-container {
   padding-bottom: 50px;
   padding-top: 50px;
 }
@@ -400,6 +400,22 @@ body {
   overflow-x: hidden;
 }
 
+.accreditations {
+  flex-grow: 1;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accreditations img {
+  width: auto;
+  margin-right: 50px;
+  filter: grayscale(1);
+}
+.accreditations img:hover {
+  filter: grayscale(0);
+}
+
 .welcome {
   background-color: #333645;
   color: #fff;
@@ -656,10 +672,10 @@ p {
   vertical-align: middle;
 }
 
-.clients-list {
+.logo-list {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  align-items: center;
 }
 
 .section__clients-desc {
@@ -1164,7 +1180,6 @@ h1 {
 .btn-primary-inverse:hover {
   color: #fff;
   background-color: #121318;
-  text-decoration: none;
 }
 
 .btn-google {

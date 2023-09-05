@@ -1,0 +1,16 @@
+.accreditations {
+    flex-grow: 1;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: auto;
+        margin-right: 50px;
+        filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}
