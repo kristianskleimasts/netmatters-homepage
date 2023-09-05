@@ -25,6 +25,12 @@
     cursor: pointer;
 }
 
+.btn-primary {
+    color: $col-white;
+    background-color: $col-dark-blue-2;
+    border-color: $col-dark-blue-2;;
+}
+
 .btn-it {
     color: $col-white;
     background-color: $it;
@@ -71,4 +77,50 @@
         background-color: #22242e;
         border-color: #191a22;
     }
+}
+
+.btn-primary-inverse {
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.btn-primary-inverse {
+    color: $col-white;
+    background-color: $inverse-static;
+
+    &:hover {
+        color: $col-white;
+        background-color: $inverse-hover;
+        text-decoration: none;
+    }
+}
+
+.btn-google {
+    background-color: $google;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 21px;
+    margin-right: 8px;
+    border-radius: 6px;
+    border: none;
+
+        &:hover {
+            background-color: $google-hover;
+        }
+}
+
+.btn-trustpilot {
+    background-color: $trustpilot;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 21px;
+    margin-right: 8px;
+    border-radius: 6px;
+    border: none;
+
+        &:hover {
+            background-color: $trustpilot-hover;
+        }
 }

@@ -1,6 +1,5 @@
 .bar {
     padding-top: 50px;
-    margin-bottom: -60px;
 }
 
 .view-all {
@@ -16,6 +15,7 @@
 .section {
     padding-top: 50px;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 
 .latest-articles .section {
@@ -28,7 +28,7 @@
 }
 
 .article-list > * {
-    margin-top: 30px;
+    margin-top: -30px;
 }
 
 .news-col {

@@ -27,6 +27,14 @@ footer {
     }
 }
 
+main,
+header,
+nav,
+section,
+footer {
+    display: block;
+}
+
 .footer__logo {
     width: 250px;
 
@@ -37,6 +45,11 @@ footer {
     img {
         width: 100%;
     }
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
 }
 
 .footer__row {
@@ -96,6 +109,7 @@ footer {
         svg {
             position: relative;
             top: 4px;
+            width: 24px;
         }
 
         @media (max-width: map-get($breakpoints, breakpoint-wide)) {
@@ -202,6 +216,7 @@ footer {
         li:before {
             content: "-";
             margin-right: 5px;
+            display: none;
 
             @media (min-width: map-get($breakpoints, breakpoint-narrow)) {
                 display: inline-block;
@@ -214,17 +229,34 @@ footer {
     display: none !important;
 }
 
-.footer__social--facebook:hover {
+.footer__social--facebook {
+    fill: $col-white; 
+
+    &:hover {
     background-color: $facebook;
+    }
 }
 
-.footer__social--linkedin:hover {
+.footer__social--linkedin {
+    fill: $col-white; 
+
+    &:hover {
     background-color: $linkedin;
+    }
 }
 
-.footer__social--twitter:hover {
+.footer__social--twitter {
+    fill: $col-white; 
+
+    &:hover {
     background-color: $twitter;
+    }
 }
-.footer__social--instagram:hover {
+.footer__social--instagram {
+    fill: $col-white; 
+
+    &:hover {
     background-color: $instagram;
+    }
 }
+
