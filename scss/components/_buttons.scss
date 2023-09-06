@@ -25,6 +25,15 @@
     cursor: pointer;
 }
 
+.btn-lg {
+    height: auto;
+    line-height: 50px;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    margin-top: 1.938rem;
+    margin-bottom: 1.125rem;
+}
+
 .btn-primary {
     color: $col-white;
     background-color: $col-dark-blue-2;

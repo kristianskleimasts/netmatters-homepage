@@ -1,0 +1,77 @@
+.banner {
+    min-height: 550px;
+}
+
+.banner-container {
+    width: 100%;
+    position: relative;
+    background-color: $col-black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-image {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+    overflow:hidden;
+
+    &::before {
+        content:"";
+        position:absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        background:linear-gradient(270deg,transparent 25%,#000);
+    }
+
+    picture {
+        width: 100%;
+        height: 100%;
+
+        .banner-fit {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.content {
+    position: relative;
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 0 0 1.25rem;
+        color: $col-white;
+        font-weight: 600;
+
+        @media (min-width: map-get($breakpoints, breakpoint-med)) {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+    }
+
+    p {
+        margin: 0 0 10px;
+        margin-bottom: .375rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+        color: $col-white;
+
+        @media (min-width: map-get($breakpoints, breakpoint-med)) {
+            font-size: 1.625rem;
+            line-height: 2.5rem;
+        }
+    }
+}
