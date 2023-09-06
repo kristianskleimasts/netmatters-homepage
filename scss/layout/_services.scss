@@ -1,0 +1,192 @@
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+
+    @media (min-width: map-get($breakpoints, breakpoint-med)) {
+        float: left;
+        width: 33.33333333%;
+    }
+}
+
+.service-col-narrow {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+
+    @media (min-width: map-get($breakpoints, breakpoint-narrow)) {
+        width: 50%;
+        float: left;
+    }
+
+    @media (min-width: map-get($breakpoints, breakpoint-med)) {
+        width: 50%;
+        float: left;
+    }
+
+    @media (min-width: map-get($breakpoints, breakpoint-wide)) {
+        width: 25%;
+        float: left;
+    }
+}
+
+.service-block {
+    display: block;
+    border: 1px solid $col-med-grey;
+    margin-top: 30px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+    top: 0;
+    transition: .5s ease;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+
+    &:hover {
+        top: -10px;
+        transition: .5s ease;
+    }
+}
+
+.service-block > span {
+    display: block;
+}
+
+.service-block span.p {
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    margin-bottom: 13px;
+    font-weight: 400;
+    color: $col-dark-blue-2;
+}
+
+.service-heading {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.1;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
+    color: $col-dark-blue-2;
+}
+
+.service__type--software {
+    &:hover {
+        background-color: $software;
+        color: $col-white;
+
+        .service-heading {
+            color: $col-white;
+        }
+
+        .btn-software {
+            background-color: $col-white;
+            color: $software
+        }
+    }
+}
+
+.service__type--it {
+    &:hover {
+        background-color: $it;
+        color: $col-white;
+
+        .service-heading {
+            color: $col-white;
+        }
+
+        .btn-it {
+            background-color: $col-white;
+            color: $it;
+        }
+    }
+}
+
+.service__type--digital {
+    &:hover {
+        background-color: $digital;
+        color: $col-white;
+
+        .service-heading {
+            color: $col-white;
+        }
+
+        .btn-digital {
+            background-color: $col-white;
+            color: $digital
+        }
+    }
+}
+
+.service__type--telecoms {
+    &:hover {
+        background-color: $telecoms;
+        color: $col-white;
+
+        .service-heading {
+            color: $col-white;
+        }
+
+        .btn-telecoms {
+            background-color: $col-white;
+            color: $telecoms
+        }
+    }
+}
+
+.service__type--web {
+    &:hover {
+        background-color: $web;
+        color: $col-white;
+
+        .service-heading {
+            color: $col-white;
+        }
+
+        .btn-web {
+            background-color: $col-white;
+            color: $web;
+        }
+    }
+}
+
+.service__type--security {
+    &:hover {
+        background-color: $security;
+        color: $col-white;
+
+        .service-heading {
+            color: $col-white;
+        }
+
+        .btn-security {
+            background-color: $col-white;
+            color: $security;
+        }
+    }
+}
+
+.service__type--developer-course {
+    &:hover {
+        background-color: $developer-course;
+        color: $col-white;
+
+        .service-heading {
+            color: $col-white;
+        }
+
+        .btn-developer-course {
+            background-color: $col-white;
+            color: $developer-course;
+        }
+    }
+}

@@ -400,6 +400,174 @@ body {
   overflow-x: hidden;
 }
 
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-col {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+@media (min-width: 992px) {
+  .service-col {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+
+.service-col-narrow {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .service-col-narrow {
+    width: 50%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .service-col-narrow {
+    width: 50%;
+    float: left;
+  }
+}
+@media (min-width: 1260px) {
+  .service-col-narrow {
+    width: 25%;
+    float: left;
+  }
+}
+
+.service-block {
+  display: block;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  padding: 30px;
+  top: 0;
+  transition: 0.5s ease;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.service-block:hover {
+  top: -10px;
+  transition: 0.5s ease;
+}
+
+.service-block > span {
+  display: block;
+}
+
+.service-block span.p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+  color: #333645;
+}
+
+.service-heading {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.1;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+  color: #333645;
+}
+
+.service__type--software:hover {
+  background-color: #67809f;
+  color: #fff;
+}
+.service__type--software:hover .service-heading {
+  color: #fff;
+}
+.service__type--software:hover .btn-software {
+  background-color: #fff;
+  color: #67809f;
+}
+
+.service__type--it:hover {
+  background-color: #4183d7;
+  color: #fff;
+}
+.service__type--it:hover .service-heading {
+  color: #fff;
+}
+.service__type--it:hover .btn-it {
+  background-color: #fff;
+  color: #4183d7;
+}
+
+.service__type--digital:hover {
+  background-color: #2ecc71;
+  color: #fff;
+}
+.service__type--digital:hover .service-heading {
+  color: #fff;
+}
+.service__type--digital:hover .btn-digital {
+  background-color: #fff;
+  color: #2ecc71;
+}
+
+.service__type--telecoms:hover {
+  background-color: #d64541;
+  color: #fff;
+}
+.service__type--telecoms:hover .service-heading {
+  color: #fff;
+}
+.service__type--telecoms:hover .btn-telecoms {
+  background-color: #fff;
+  color: #d64541;
+}
+
+.service__type--web:hover {
+  background-color: #926fb1;
+  color: #fff;
+}
+.service__type--web:hover .service-heading {
+  color: #fff;
+}
+.service__type--web:hover .btn-web {
+  background-color: #fff;
+  color: #926fb1;
+}
+
+.service__type--security:hover {
+  background-color: #f62459;
+  color: #fff;
+}
+.service__type--security:hover .service-heading {
+  color: #fff;
+}
+.service__type--security:hover .btn-security {
+  background-color: #fff;
+  color: #f62459;
+}
+
+.service__type--developer-course:hover {
+  background-color: #f62459;
+  color: #fff;
+}
+.service__type--developer-course:hover .service-heading {
+  color: #fff;
+}
+.service__type--developer-course:hover .btn-developer-course {
+  background-color: #fff;
+  color: #f62459;
+}
+
 .accreditations {
   flex-grow: 1;
   vertical-align: middle;
@@ -504,20 +672,20 @@ body {
   margin-top: -30px;
 }
 
-.news-col {
+.item-col {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .news-col {
+  .item-col {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 1260px) {
-  .news-col {
+  .item-col {
     float: left;
     width: 33.33333333%;
   }
@@ -1155,6 +1323,24 @@ h1 {
   border-color: #67809f;
 }
 
+.btn-security {
+  color: #fff;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+.btn-telecoms {
+  color: #fff;
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+.btn-developer-course {
+  color: #fff;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
 .news-sub-btn {
   color: #fff;
   background-color: #323544;
@@ -1171,6 +1357,21 @@ h1 {
   padding: 10px 30px;
   font-size: 20px;
   margin-right: 8px;
+}
+@media (max-width: 535px) {
+  .btn-primary-inverse {
+    margin-bottom: 17px !important;
+  }
+}
+@media (max-width: 992px) {
+  .btn-primary-inverse {
+    margin-bottom: 50px !important;
+  }
+}
+@media (max-width: 1260px) {
+  .btn-primary-inverse {
+    margin-bottom: 17px;
+  }
 }
 
 .btn-primary-inverse {

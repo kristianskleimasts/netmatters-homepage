@@ -67,6 +67,24 @@
     border-color: $software;
 }
 
+.btn-security {
+    color: $col-white;
+    background-color: $security;
+    border-color: $security;
+}
+
+.btn-telecoms {
+    color: $col-white;
+    background-color: $telecoms;
+    border-color: $telecoms;
+}
+
+.btn-developer-course {
+    color: $col-white;
+    background-color: $developer-course;
+    border-color: $developer-course;
+}
+
 .news-sub-btn {
     color: $col-white;
     background-color: $col-dark-blue;
@@ -84,6 +102,18 @@
     padding: 10px 30px;
     font-size: 20px;
     margin-right: 8px;
+
+    @media (max-width: 535px) {
+        margin-bottom: 17px !important;
+    }
+
+    @media (max-width: map-get($breakpoints, breakpoint-med)) {
+        margin-bottom: 50px !important;
+    }
+
+    @media (max-width: map-get($breakpoints, breakpoint-wide)) {
+        margin-bottom: 17px;
+    }
 }
 
 .btn-primary-inverse {
