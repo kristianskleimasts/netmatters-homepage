@@ -380,6 +380,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 *,
 ::after,
 ::before {
@@ -398,6 +402,136 @@ body {
 
 .overflow-hidden {
   overflow-x: hidden;
+}
+
+.primary-nav {
+  display: none;
+  background-color: #333645;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .primary-nav {
+    display: block;
+  }
+}
+.primary-nav a {
+  color: #fff;
+}
+
+.primary-nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
+}
+.nav-item:hover .nav-sub-menu {
+  display: block;
+}
+
+.nav-item-sub {
+  width: 33%;
+  margin-top: 15px;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.313rem;
+  padding: 0.625rem 0.938rem 0.625rem 0;
+}
+
+.nav-sub-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 1;
+}
+
+.nav-sub-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -15px;
+  text-align: left;
+  padding: 0;
+}
+
+.p-nav-link {
+  position: relative;
+  display: block;
+  color: #fff;
+  padding: 19px 0 18px;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1;
+}
+.p-nav-link small {
+  display: block;
+  font-size: 0.625rem;
+  padding-bottom: 1px;
+}
+
+.nav-item-software:hover {
+  background-color: #67809f;
+}
+.nav-item-software .nav-sub-menu {
+  background-color: #526781;
+}
+
+.nav-item-it:hover {
+  background-color: #4183d7;
+}
+.nav-item-it .nav-sub-menu {
+  background-color: #286abd;
+}
+
+.nav-item-digital:hover {
+  background-color: #2ecc71;
+}
+.nav-item-digital .nav-sub-menu {
+  background-color: #25a25a;
+}
+
+.nav-item-telecoms:hover {
+  background-color: #d64541;
+}
+.nav-item-telecoms .nav-sub-menu {
+  background-color: #bc2c28;
+}
+
+.nav-item-web:hover {
+  background-color: #926fb1;
+}
+.nav-item-web .nav-sub-menu {
+  background-color: #79539a;
+}
+
+.nav-item-cyber:hover {
+  background-color: #f62459;
+}
+.nav-item-cyber .nav-sub-menu {
+  background-color: #de093f;
+}
+
+.nav-item-dev:hover {
+  background-color: #ce4125;
+}
+.nav-item-dev .nav-sub-menu {
+  background-color: #a3331d !important;
+}
+
+.sub-menu-banner-title {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 .banner {
@@ -636,7 +770,7 @@ body {
 }
 
 .service__type--developer-course:hover {
-  background-color: #f62459;
+  background-color: #ce4125;
   color: #fff;
 }
 .service__type--developer-course:hover .service-heading {
@@ -644,7 +778,7 @@ body {
 }
 .service__type--developer-course:hover .btn-developer-course {
   background-color: #fff;
-  color: #f62459;
+  color: #ce4125;
 }
 
 .accreditations {
@@ -1424,8 +1558,8 @@ h1 {
 
 .btn-developer-course {
   color: #fff;
-  background-color: #f62459;
-  border-color: #f62459;
+  background-color: #ce4125;
+  border-color: #ce4125;
 }
 
 .news-sub-btn {
