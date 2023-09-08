@@ -199,3 +199,9 @@ p {
     font-weight: 400;
     vertical-align: middle;
 }
+
+.software {
+    @media (min-width: map-get($breakpoints, breakpoint-narrow)) and (max-width: 1259px) {
+        display: none;
+    }
+}

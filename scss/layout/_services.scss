@@ -18,11 +18,15 @@
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
 
     @media (min-width: map-get($breakpoints, breakpoint-med)) {
         float: left;
         width: 33.33333333%;
+        display: flex;
+    }
+
+    @media (max-width: 991px) {
+        flex-basis: 100%;
     }
 }
 
@@ -31,21 +35,27 @@
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
 
     @media (min-width: map-get($breakpoints, breakpoint-narrow)) {
         width: 50%;
         float: left;
+        display: flex;
     }
 
     @media (min-width: map-get($breakpoints, breakpoint-med)) {
         width: 50%;
         float: left;
+        display: flex;
     }
 
     @media (min-width: map-get($breakpoints, breakpoint-wide)) {
         width: 25%;
         float: left;
+        display: flex;
+    }
+
+    @media (max-width: 767px) {
+        flex-basis: 100%;
     }
 }
 
@@ -92,7 +102,9 @@
 .service__type--software {
     &:hover {
         background-color: $software;
-        color: $col-white;
+        span {
+            color: $col-white;
+        }
 
         .service-heading {
             color: $col-white;
@@ -108,7 +120,9 @@
 .service__type--it {
     &:hover {
         background-color: $it;
-        color: $col-white;
+        span {
+            color: $col-white;
+        }
 
         .service-heading {
             color: $col-white;
@@ -124,7 +138,9 @@
 .service__type--digital {
     &:hover {
         background-color: $digital;
-        color: $col-white;
+        span {
+            color: $col-white;
+        }
 
         .service-heading {
             color: $col-white;
@@ -140,7 +156,9 @@
 .service__type--telecoms {
     &:hover {
         background-color: $telecoms;
-        color: $col-white;
+        span {
+            color: $col-white;
+        }
 
         .service-heading {
             color: $col-white;
@@ -156,7 +174,9 @@
 .service__type--web {
     &:hover {
         background-color: $web;
-        color: $col-white;
+        span {
+            color: $col-white;
+        }
 
         .service-heading {
             color: $col-white;
@@ -172,7 +192,9 @@
 .service__type--security {
     &:hover {
         background-color: $security;
-        color: $col-white;
+        span {
+            color: $col-white;
+        }
 
         .service-heading {
             color: $col-white;
@@ -188,7 +210,9 @@
 .service__type--developer-course {
     &:hover {
         background-color: $developer-course;
-        color: $col-white;
+        span {
+            color: $col-white;
+        }
 
         .service-heading {
             color: $col-white;
